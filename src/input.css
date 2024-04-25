@@ -12,4 +12,16 @@
     body {
         @apply bg-clr-background;
     }
+
+    .custom-transition {
+        @apply ease-out duration-300;
+    }
+
+    .container {
+        @apply max-w-full;
+    }
+
+    .menu-list a {
+        @apply font-medium hover:text-clr-hover;
+    }
 }
