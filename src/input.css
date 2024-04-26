@@ -24,4 +24,16 @@
     .menu-list a {
         @apply font-medium hover:text-clr-hover;
     }
+
+    .col {
+        @apply flex-1;
+    }
+
+    .about .row{
+        height: calc(100vh - 112px);
+    }
+
+    .about .text span {
+        @apply text-clr-primary;
+    }
 }
