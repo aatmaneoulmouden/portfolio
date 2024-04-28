@@ -29,7 +29,9 @@
         @apply flex-1;
     }
 
-    .about .row{
-        height: calc(100vh - 112px);
+    @media (min-width: 1024px) {
+        .about .row {
+            height: calc(100vh - 112px);
+        }
     }
 }
