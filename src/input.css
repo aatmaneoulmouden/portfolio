@@ -6,7 +6,7 @@
 
 @layer components {
     * {
-        @apply font-main text-clr-text;
+        @apply font-main text-very-dark-blue;
     }
 
     body {
@@ -31,9 +31,5 @@
 
     .about .row{
         height: calc(100vh - 112px);
-    }
-
-    .about .text span {
-        @apply text-clr-primary;
     }
 }
