@@ -6,32 +6,14 @@
 
 @layer components {
     * {
-        @apply font-main text-very-dark-blue;
+        @apply font-main text-dark font-medium;
     }
 
-    body {
-        @apply bg-clr-background;
+    .nav-list a {
+        @apply hover:text-blue-light;
     }
 
-    .custom-transition {
-        @apply ease-out duration-300;
-    }
-
-    .container {
-        @apply max-w-full;
-    }
-
-    .menu-list a {
-        @apply font-medium hover:text-clr-hover;
-    }
-
-    .col {
-        @apply flex-1;
-    }
-
-    @media (min-width: 1024px) {
-        .about .row {
-            height: calc(100vh - 112px);
-        }
+    .icons-list i {
+        @apply text-2xl cursor-pointer hover:text-blue-dark;
     }
 }

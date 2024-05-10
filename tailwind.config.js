@@ -17,13 +17,16 @@ module.exports = {
     },
     extend: {
       colors: {
-        'clr-background': '#F4F4F4',
-        'clr-primary': '#3F51B5',
-        'clr-hover': '#1976D2',
-        'clr-text': '#333333',
-        'dark-black': '#2f2e41',
-        'very-dark-blue': '#1d2025',
-        'grayish-blue': '#b6bcc8',
+        // 'light': '#EDEFF3',
+        // 'dark': '#151425',
+        // 'gray': '#727C85',
+        // 'light-blue': '#206EF3',
+        
+        'dark': '#040F16',
+        'light': '#FBFBFF',
+        'blue-dark': '#0B4F6C',
+        'blue-light': '#01BAEF',
+        'red': '#B80C09'
       },
     },
   },
