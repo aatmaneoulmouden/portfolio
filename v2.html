@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
-  <body>
+  <body class="relative overflow-x-hidden">
     <img
       src="./assets/images/bg-illustration.svg"
       alt=""
-      class="fixed -top-1/2 -right-1/2 -z-10"
+      class="absolute -top-[30%] -right-1/2 -z-10"
     />
     <header class="py-8">
       <div class="container">
@@ -49,26 +49,91 @@
       </div>
     </header>
 
-    <section class="">
+    <section id="home" class="home">
       <div class="container">
-        <div class="grid grid-cols-2 items-center">
+        <div class="grid grid-cols-2 items-center" style="height: calc(100vh - 96px)">
           <div>
             <div class="mb-10">
               <p class="text-xl mb-3">👋 Hello there!</p>
               <h1 class="text-6xl font-bold mb-5">I'm Aatmane,</h1>
-              <h1 class="text-6xl font-bold mb-5">I'm a <span class="text-blue-light font-bold">Developer</span></h1>
+              <h1 class="text-6xl font-bold mb-5">
+                I'm a <span class="text-blue-light font-bold">Developer</span>
+              </h1>
               <p class="text-4xl">I build things for web</p>
             </div>
             <div class="flex gap-6">
-              <a href="" class="btn bg-blue-dark border-blue-dark text-light hover:bg-blue-light hover:border-blue-light">More about me</a>
-              <a href="" class="btn border-dark hover:text-blue-light hover:border-blue-light">Discover my work</a>
+              <a
+                href=""
+                class="btn bg-blue-dark border-blue-dark text-light hover:bg-blue-light hover:border-blue-light"
+                >More about me</a
+              >
+              <a
+                href=""
+                class="btn border-dark hover:text-blue-light hover:border-blue-light"
+                >Discover my work</a
+              >
             </div>
           </div>
           <img
             src="./assets/images/svgviewer-output.svg"
             alt=""
-            class="ml-auto mt-32 w"
+            class="ml-auto"
           />
+        </div>
+      </div>
+    </section>
+    <section id="about" class="min-h-screen flex justify-center items-center">
+      <div class="container">
+        <div class="grid grid-cols-2 items-center">
+          <div class="image">
+            <img
+              src="./assets/images/aatmane_2.png"
+              alt="Aatmane Oulmouden"
+              class="w-3/4"
+            />
+          </div>
+          <div class="text">
+            <small class="font-medium text-blue-dark"
+              >Full Stack Web Developer</small
+            >
+            <h1 class="text-4xl font-semibold mb-5">I'm Aatmane Oulmouden</h1>
+            <p class="font-medium leading-[36px]">
+              Hi there! I'm a full-stack web developer. That means I make both
+              the parts of websites you see and use (like buttons and forms) and
+              the parts you don't see (like storing data). I use HTML, CSS, and
+              JavaScript to make the visible parts, and PHP or Node.js along
+              with databases like MongoDB or MySQL for the hidden parts. Take a
+              look at my portfolio to see what I've made!
+            </p>
+
+            <ul class="social-links-list flex gap-4 mt-4">
+              <li>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+            </ul>
+
+            <div class="flex gap-6 justify-end mt-5">
+              <a
+                href="mailto:aatmaneoulmouden@gmail.com"
+                class="btn bg-blue-dark border-blue-dark text-light hover:bg-blue-light hover:border-blue-light"
+                >Let's Talk</a
+              >
+              <a
+                href=""
+                class="btn border-dark hover:text-blue-light hover:border-blue-light"
+                >Discover my work</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>

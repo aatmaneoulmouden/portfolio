@@ -26,4 +26,8 @@
     .icons-list i {
         @apply text-2xl cursor-pointer hover:text-blue-dark;
     }
+
+    .social-links-list i {
+        @apply text-2xl;
+    }
 }
