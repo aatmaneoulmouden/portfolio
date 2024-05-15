@@ -11,6 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
@@ -49,12 +53,16 @@
       </div>
     </header>
 
+    <!-- ========== Start HOME Section ========== -->
     <section id="home" class="home">
       <div class="container">
-        <div class="grid grid-cols-2 items-center" style="height: calc(100vh - 96px)">
-          <div>
+        <div
+          class="grid grid-cols-2 items-center"
+          style="height: calc(100vh - 96px)"
+        >
+          <div class="text">
             <div class="mb-10">
-              <p class="text-xl mb-3">👋 Hello there!</p>
+              <small class="text-xl mb-3">👋 Hello there!</small>
               <h1 class="text-6xl font-bold mb-5">I'm Aatmane,</h1>
               <h1 class="text-6xl font-bold mb-5">
                 I'm a <span class="text-blue-light font-bold">Developer</span>
@@ -74,14 +82,19 @@
               >
             </div>
           </div>
-          <img
-            src="./assets/images/svgviewer-output.svg"
-            alt=""
-            class="ml-auto"
-          />
+          <div class="image">
+            <img
+              src="./assets/images/svgviewer-output.svg"
+              alt=""
+              class="ml-auto"
+            />
+          </div>
         </div>
       </div>
     </section>
+    <!-- ========== End HOME Section ========== -->
+
+    <!-- ========== Start ABOUT Section ========== -->
     <section id="about" class="min-h-screen flex justify-center items-center">
       <div class="container">
         <div class="grid grid-cols-2 items-center">
@@ -137,6 +150,254 @@
         </div>
       </div>
     </section>
+    <!-- ========== End ABOUT Section ========== -->
+    <!-- ========== Start PROJECTS Section ========== -->
+    <section id="projects" class="projects min-h-screen flex items-center">
+      <div class="container">
+        <div class="heading mb-20">
+          <h1 class="text-4xl font-bold mx-auto w-fit">
+            My
+            <span
+              class="bg-gradient-to-r from-blue-dark to-blue-light py-2 px-4 rounded-full font-bold text-light"
+              >Projects</span
+            >
+          </h1>
+        </div>
+        <div class="swiper projectSwiper relative px-5">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide aspect-[3/4] rounded-xl overflow-hidden p-1 relative cursor-pointer group"
+            >
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-dark to-blue-light -z-10 transition duration-300 ease-linear group-hover:bg-gradient-to-t"
+              ></div>
+              <a
+                href=""
+                class="ml-auto w-9 h-9 flex justify-center items-center rounded-lg bg-blue-dark absolute right-3 -translate-y-10 transition duration-300 ease-linear group-hover:translate-y-3 z-20"
+                ><i class="fa-solid fa-up-right-from-square text-light"></i
+              ></a>
+              <div
+                class="absolute left-0 translate-y-full w-full h-full bg-gradient-to-t from-blue-dark z-10 transition duration-300 ease-linear group-hover:bottom-0 group-hover:translate-y-0"
+              >
+                <div
+                  class="project-details h-full p-3 flex flex-col justify-end"
+                >
+                  <h1 class="text-xl font-semibold text-light">
+                    Manage Landing Page
+                  </h1>
+                </div>
+              </div>
+              <img
+                src="./assets/images/projects/1.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-lg transition duration-300 ease-linear group-hover:scale-110"
+              />
+            </div>
+            <div
+              class="swiper-slide aspect-[3/4] rounded-xl overflow-hidden p-1 relative cursor-pointer group"
+            >
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-dark to-blue-light -z-10 transition duration-300 ease-linear group-hover:bg-gradient-to-t"
+              ></div>
+              <a
+                href=""
+                class="ml-auto w-9 h-9 flex justify-center items-center rounded-lg bg-blue-dark absolute right-3 -translate-y-10 transition duration-300 ease-linear group-hover:translate-y-3 z-20"
+                ><i class="fa-solid fa-up-right-from-square text-light"></i
+              ></a>
+              <div
+                class="absolute left-0 translate-y-full w-full h-full bg-gradient-to-t from-blue-dark z-10 transition duration-300 ease-linear group-hover:bottom-0 group-hover:translate-y-0"
+              >
+                <div
+                  class="project-details h-full p-3 flex flex-col justify-end"
+                >
+                  <h1 class="text-xl font-semibold text-light">
+                    Manage Landing Page
+                  </h1>
+                </div>
+              </div>
+              <img
+                src="./assets/images/projects/1.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-lg transition duration-300 ease-linear group-hover:scale-110"
+              />
+            </div>
+            <div
+              class="swiper-slide aspect-[3/4] rounded-xl overflow-hidden p-1 relative cursor-pointer group"
+            >
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-dark to-blue-light -z-10 transition duration-300 ease-linear group-hover:bg-gradient-to-t"
+              ></div>
+              <a
+                href=""
+                class="ml-auto w-9 h-9 flex justify-center items-center rounded-lg bg-blue-dark absolute right-3 -translate-y-10 transition duration-300 ease-linear group-hover:translate-y-3 z-20"
+                ><i class="fa-solid fa-up-right-from-square text-light"></i
+              ></a>
+              <div
+                class="absolute left-0 translate-y-full w-full h-full bg-gradient-to-t from-blue-dark z-10 transition duration-300 ease-linear group-hover:bottom-0 group-hover:translate-y-0"
+              >
+                <div
+                  class="project-details h-full p-3 flex flex-col justify-end"
+                >
+                  <h1 class="text-xl font-semibold text-light">
+                    Manage Landing Page
+                  </h1>
+                </div>
+              </div>
+              <img
+                src="./assets/images/projects/1.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-lg transition duration-300 ease-linear group-hover:scale-110"
+              />
+            </div>
+            <div
+              class="swiper-slide aspect-[3/4] rounded-xl overflow-hidden p-1 relative cursor-pointer group"
+            >
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-dark to-blue-light -z-10 transition duration-300 ease-linear group-hover:bg-gradient-to-t"
+              ></div>
+              <a
+                href=""
+                class="ml-auto w-9 h-9 flex justify-center items-center rounded-lg bg-blue-dark absolute right-3 -translate-y-10 transition duration-300 ease-linear group-hover:translate-y-3 z-20"
+                ><i class="fa-solid fa-up-right-from-square text-light"></i
+              ></a>
+              <div
+                class="absolute left-0 translate-y-full w-full h-full bg-gradient-to-t from-blue-dark z-10 transition duration-300 ease-linear group-hover:bottom-0 group-hover:translate-y-0"
+              >
+                <div
+                  class="project-details h-full p-3 flex flex-col justify-end"
+                >
+                  <h1 class="text-xl font-semibold text-light">
+                    Manage Landing Page
+                  </h1>
+                </div>
+              </div>
+              <img
+                src="./assets/images/projects/1.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-lg transition duration-300 ease-linear group-hover:scale-110"
+              />
+            </div>
+            <div
+              class="swiper-slide aspect-[3/4] rounded-xl overflow-hidden p-1 relative cursor-pointer group"
+            >
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-dark to-blue-light -z-10 transition duration-300 ease-linear group-hover:bg-gradient-to-t"
+              ></div>
+              <a
+                href=""
+                class="ml-auto w-9 h-9 flex justify-center items-center rounded-lg bg-blue-dark absolute right-3 -translate-y-10 transition duration-300 ease-linear group-hover:translate-y-3 z-20"
+                ><i class="fa-solid fa-up-right-from-square text-light"></i
+              ></a>
+              <div
+                class="absolute left-0 translate-y-full w-full h-full bg-gradient-to-t from-blue-dark z-10 transition duration-300 ease-linear group-hover:bottom-0 group-hover:translate-y-0"
+              >
+                <div
+                  class="project-details h-full p-3 flex flex-col justify-end"
+                >
+                  <h1 class="text-xl font-semibold text-light">
+                    Manage Landing Page
+                  </h1>
+                </div>
+              </div>
+              <img
+                src="./assets/images/projects/1.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-lg transition duration-300 ease-linear group-hover:scale-110"
+              />
+            </div>
+            <div
+              class="swiper-slide aspect-[3/4] rounded-xl overflow-hidden p-1 relative cursor-pointer group"
+            >
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-dark to-blue-light -z-10 transition duration-300 ease-linear group-hover:bg-gradient-to-t"
+              ></div>
+              <a
+                href=""
+                class="ml-auto w-9 h-9 flex justify-center items-center rounded-lg bg-blue-dark absolute right-3 -translate-y-10 transition duration-300 ease-linear group-hover:translate-y-3 z-20"
+                ><i class="fa-solid fa-up-right-from-square text-light"></i
+              ></a>
+              <div
+                class="absolute left-0 translate-y-full w-full h-full bg-gradient-to-t from-blue-dark z-10 transition duration-300 ease-linear group-hover:bottom-0 group-hover:translate-y-0"
+              >
+                <div
+                  class="project-details h-full p-3 flex flex-col justify-end"
+                >
+                  <h1 class="text-xl font-semibold text-light">
+                    Manage Landing Page
+                  </h1>
+                </div>
+              </div>
+              <img
+                src="./assets/images/projects/1.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-lg transition duration-300 ease-linear group-hover:scale-110"
+              />
+            </div>
+            <div
+              class="swiper-slide aspect-[3/4] rounded-xl overflow-hidden p-1 relative cursor-pointer group"
+            >
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-dark to-blue-light -z-10 transition duration-300 ease-linear group-hover:bg-gradient-to-t"
+              ></div>
+              <a
+                href=""
+                class="ml-auto w-9 h-9 flex justify-center items-center rounded-lg bg-blue-dark absolute right-3 -translate-y-10 transition duration-300 ease-linear group-hover:translate-y-3 z-20"
+                ><i class="fa-solid fa-up-right-from-square text-light"></i
+              ></a>
+              <div
+                class="absolute left-0 translate-y-full w-full h-full bg-gradient-to-t from-blue-dark z-10 transition duration-300 ease-linear group-hover:bottom-0 group-hover:translate-y-0"
+              >
+                <div
+                  class="project-details h-full p-3 flex flex-col justify-end"
+                >
+                  <h1 class="text-xl font-semibold text-light">
+                    Manage Landing Page
+                  </h1>
+                </div>
+              </div>
+              <img
+                src="./assets/images/projects/1.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-lg transition duration-300 ease-linear group-hover:scale-110"
+              />
+            </div>
+            <div
+              class="swiper-slide aspect-[3/4] rounded-xl overflow-hidden p-1 relative cursor-pointer group"
+            >
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-dark to-blue-light -z-10 transition duration-300 ease-linear group-hover:bg-gradient-to-t"
+              ></div>
+              <a
+                href=""
+                class="ml-auto w-9 h-9 flex justify-center items-center rounded-lg bg-blue-dark absolute right-3 -translate-y-10 transition duration-300 ease-linear group-hover:translate-y-3 z-20"
+                ><i class="fa-solid fa-up-right-from-square text-light"></i
+              ></a>
+              <div
+                class="absolute left-0 translate-y-full w-full h-full bg-gradient-to-t from-blue-dark z-10 transition duration-300 ease-linear group-hover:bottom-0 group-hover:translate-y-0"
+              >
+                <div
+                  class="project-details h-full p-3 flex flex-col justify-end"
+                >
+                  <h1 class="text-xl font-semibold text-light">
+                    Manage Landing Page
+                  </h1>
+                </div>
+              </div>
+              <img
+                src="./assets/images/projects/1.jpg"
+                alt=""
+                class="w-full h-full object-cover rounded-lg transition duration-300 ease-linear group-hover:scale-110"
+              />
+            </div>
+          </div>
+          <div class="project-swiper-button-next w-10 h-10 flex justify-center items-center rounded-full bg-blue-dark absolute top-1/2 -translate-y-1/2 right-0 z-10 border-4 border-light"><i class="fa-solid fa-angle-right text-light"></i></div>
+          <div class="project-swiper-button-prev w-10 h-10 flex justify-center items-center rounded-full bg-blue-dark absolute top-1/2 -translate-y-1/2 left-0 z-10 border-4 border-light"><i class="fa-solid fa-angle-left text-light"></i></div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End PROJECTS Section ========== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
